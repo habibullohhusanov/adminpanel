@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Raleway;
+}
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #63c348;
+}
+.dark {
+    --black: #fff;
+    --white: #000;
+    --green: #457e36;
+}
+body {
+    background-color: var(--white);
+    transition: 0.3s;
+}
+header {
+    overflow: hidden;
+    background-color: var(--black);
+    transition: 0.3s;
+}
+.hidden {
+    display: none;
+    transition: 0.3s;
+    z-index: -100;
+}
+.box {
+    float: left;
+    margin: 20px;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hum, .hummer {
+    font-size: 40px;
+}
+.title {
+    margin: 20px;
+    float: left;
+    transition: 0.3s;
+}
+.title_h1 {
+    color: var(--white);
+    font-weight: bold;
+}
+.title_h1 span {
+    color: var(--green);
+}
+.mode {
+    float: right;
+    margin: 20px;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.darki, .lighti {
+    font-size: 40px;
+}
+.secret {
+    transition: 0.3s;
+    margin-left: -100%;
+}
+.nav {
+    width: 25%;
+    height: 90vh;
+    background-color: var(--white);
+    box-shadow: 1px 1px 10px 1px var(--black);
+    transition: 0.3s;
+    z-index: 99;
+    position: absolute;
+}
+.ul li {
+    padding: 10px 50px;
+    /* border: 2px solid var(--white); */
+}
+.ul li a {
+    font-weight: bold;
+    color: var(--black);
+    text-align: center;
+}
+.ul li:hover {
+    border: 2px solid var(--black);
+}
+.loader {
+    position: fixed;
+    z-index: 100;
+}
+iframe {
+    width: 46%;
+    height: 70vh;
+    margin: 2%;
+    float: left;
+}
