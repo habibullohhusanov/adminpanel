@@ -22,6 +22,7 @@ body {
     transition: 0.3s;
 }
 header {
+    width: 100%;
     overflow: hidden;
     background-color: var(--black);
     transition: 0.3s;
@@ -74,7 +75,7 @@ header {
     box-shadow: 1px 1px 10px 1px var(--black);
     transition: 0.3s;
     z-index: 99;
-    position: absolute;
+    position: fixed;
 }
 .ul li {
     padding: 10px 50px;
@@ -97,4 +98,65 @@ iframe {
     height: 70vh;
     margin: 2%;
     float: left;
+}
+@media (max-width: 870px) {
+    .nav {
+        width: 35%;
+    }
+}
+@media (max-width: 700px) {
+    iframe {
+        width: 80%;
+        margin: 5% 10%;
+    }
+}
+@media (max-width: 550px) {
+    .nav {
+        width: 45%;
+    }
+}
+@media (max-width: 430px) {
+    .nav {
+        width: 45%;
+    }
+    .box {
+        margin: 15px;
+    }
+    .hum, .hummer {
+        font-size: 30px;
+    }
+    .title {
+        margin: 10px;
+        float: left;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    .mode {
+        margin: 15px;
+    }
+    .darki, .lighti {
+        font-size: 30px;
+    }
+}
+@media (max-width: 380px) {
+    .nav {
+        width: 50%;
+        height: 92vh;
+    }
+    .box {
+        margin: 10px;
+    }
+    .hum, .hummer {
+        font-size: 25px;
+    }
+    .title {
+        margin: 8px;
+        font-size: 13px;
+    }
+    .mode {
+        margin: 10px;
+    }
+    .darki, .lighti {
+        font-size: 25px;
+    }
 }
