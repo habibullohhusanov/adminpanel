@@ -10,11 +10,13 @@
 :root {
     --black: #000;
     --white: #fff;
+    --whites: #edebd9;
     --green: #63c348;
 }
 .dark {
     --black: #fff;
-    --white: #000;
+    --white: #24262b;
+    --whites: #00010a;
     --green: #457e36;
 }
 body {
@@ -24,7 +26,7 @@ body {
 header {
     width: 100%;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--whites);
     transition: 0.3s;
 }
 .hidden {
@@ -35,7 +37,7 @@ header {
 .box {
     float: left;
     margin: 20px;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -48,7 +50,7 @@ header {
     transition: 0.3s;
 }
 .title_h1 {
-    color: var(--white);
+    color: var(--black);
     font-weight: bold;
 }
 .title_h1 span {
@@ -57,7 +59,7 @@ header {
 .mode {
     float: right;
     margin: 20px;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -71,8 +73,8 @@ header {
 .nav {
     width: 25%;
     height: 90vh;
-    background-color: var(--white);
-    box-shadow: 1px 1px 10px 1px var(--black);
+    background-color: var(--whites);
+    box-shadow: 1px 1px 10px 1px var(--whites);
     transition: 0.3s;
     z-index: 99;
     position: fixed;
@@ -160,5 +162,4 @@ iframe {
         font-size: 25px;
     }
 }
-
-/* Prepered by habibulloh */
+/* Prepered by Habibulloh */
